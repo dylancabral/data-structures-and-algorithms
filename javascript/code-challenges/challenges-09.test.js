@@ -10,6 +10,7 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
+  return arr.reduce((max, num) => num > max ? num : max, arr[0]);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -19,13 +20,15 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
-const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+const courseInfo = {
+  name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
 
 const getCourseKeys = (obj) => {
   // Solution code here...
+  return Object.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,6 +41,7 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
+  return Object.keys(obj).includes(value) || Object.values(obj).includes(value);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -61,6 +65,13 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let keys = Object.keys(obj);
+  let vals = Object.values(obj);
+  let result = [];
+  for (let i = 0; i < keys.length; i++) {
+    result.push(`${keys[i]}: ${vals[i]}`);
+  }
+  return result;
 };
 
 
@@ -115,9 +126,9 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
-  // Solution code here...
-  return houses;
+  return arr.map(item => {
+    return item.house;
+  });
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -133,7 +144,16 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  let values = arr.map(item => {
+    return Object.values(item);
+  });
+  let result = false;
+  for (let i = 0; i < values.length; i++) {
+    if (values[i][0] === character && typeof values[i][2] === 'object') {
+      result = true;
+    }
+  }
+  return result;
 
 };
 
