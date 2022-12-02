@@ -8,6 +8,8 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 
 const replaceZeros = (string) => {
   // Solution code here...
+  let regex = /0/gm;
+  return string.replace(regex, 'zero');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -20,6 +22,8 @@ If the PIN is four numerical digits long, return true. Otherwise, return false.
 
 const validatePin = (pin) => {
   // Solution code here...
+  let regex = /^\d{4}$/gm;
+  return regex.test(pin);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,6 +36,8 @@ If the word is between 5 and 10 characters long, return true. Otherwise, return 
 
 const validateWord = (word) => {
   // Solution code here...
+  let regex = /^[a-zA-Z]{5,10}$/gm;
+  return regex.test(word);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,6 +50,8 @@ If it does, return true. If not, return false.
 
 const hasNumber = (string) => {
   // Solution code here...
+  let regex = /^[a-zA-Z]{1,}[0-9_]/gm;
+  return regex.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +71,8 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  // Solution code here...
+  let regex = /^\w\w*(.|)\w\w*@\w*(.net|.com|.org)\b/gm;
+  return regex.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,7 +97,7 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  return /^([0-9]{3}|[(][0-9]{3}[)])(-| |)[0-9]{3}(-| |)[0-9]{4}$/g.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
