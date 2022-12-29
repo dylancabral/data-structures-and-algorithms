@@ -1,19 +1,30 @@
+class Node:
+    def __init__(self, value=None, nextval=None):
+        self.value = value
+        self.next = nextval
+
+
 class LinkedList:
     def __init__(self):
         self.head = None
+        self.next = None
+
+    def __str__(self):
+        # '{ apple } -> NULL
+        current = self.head
+        string_values = ""
+        while current is not None:
+            string_values += f"{{ {str(current.value)} }} -> "
+            current = current.next
+        string_values += "NULL"
+        return string_values
 
     def insert(self, value):
-        """
-        adds a new node with a value to the head of the list - with an O(1) time performance
-        """
         new_node = Node(value)
         new_node.next = self.head
         self.head = new_node
 
     def includes(self, value):
-        """
-        indicates whether a value exists as a Node's value somewhere within the list
-        """
         current = self.head
         while current is not None:
             if current.value == value:
@@ -21,22 +32,55 @@ class LinkedList:
             current = current.next
         return False
 
-    def __str__(self):
-        values = []
+    def append(self, value):
         current = self.head
-        while current is not None:
-            values.append("{ " + str(current.value) + " }")
+        while current.next is not None:
             current = current.next
-        if len(values) == 0:
-            return "NULL"
-        return " -> ".join(values) + " -> NULL"
+        current.next = Node(value)
+
+    def insert_before(self, before, value):
+        current = self.head
+        previous = None
+        try:
+            while current.value is not before:
+                previous = current
+                current = current.next
+            new_node = Node(value)
+            new_node.next = current
+            if previous is not None:
+                previous.next = new_node
+            if previous is None:
+                self.head = new_node
+        except Exception as e:
+            raise TargetError(e)
+
+    def insert_after(self, after, value):
+        current = self.head
+        try:
+            while current.value is not after:
+                current = current.next
+            new_node = Node(value)
+            new_node.next = current.next
+            current.next = new_node
+        except Exception as e:
+            raise TargetError(e)
+
+    def kth_from_end(self, value):
+        current = self.head
+        length = 0
+        while current is not None:
+            current = current.next
+            length += 1
+        if value >= length:
+            raise TargetError(Exception)
+        if value < 0:
+            raise TargetError(Exception)
+        current = self.head
+        for x in range(0, length - value - 1):
+            print(current.value)
+            current = current.next
+        return current.value
 
 
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-
-
-class TargetError:
+class TargetError(Exception):
     pass

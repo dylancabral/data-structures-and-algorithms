@@ -24,7 +24,11 @@ To run your tests
 
 ### Table of Contents
 
-[Array Reverse](python/docs/array_reverse/README.md)
-[Array Insert Shift](python/docs/array_insert_shift/README.md)
-[Arrray Binary Shift](python/docs/array_binary_shift/README.md)
-[Mock Interviews](python/docs/mock-interviews/README.md)
+- [Array Reverse](python/docs/array_reverse/README.md)
+- [Array Insert Shift](python/docs/array_insert_shift/README.md)
+- [Array Binary Search](python/docs/array_binary_search/README.md)
+- [Mock Interviews](python/docs/mock-interviews/README.md)
+- [Linked List](python/docs/linked_list/README.md)
+- [Linked List Insertions](python/docs/linked_list_insertions/README.md)
+- []()
+
