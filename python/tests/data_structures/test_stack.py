@@ -1,6 +1,6 @@
 import pytest
-from python.data_structures.stack import Stack
-from python.data_structures.invalid_operation_error import InvalidOperationError
+from data_structures.stack import Stack
+from data_structures.invalid_operation_error import InvalidOperationError
 
 
 def test_exists():
@@ -11,7 +11,7 @@ def test_exists():
 def test_push_onto_empty():
     s = Stack()
     s.push("apple")
-    actual = s.head.value
+    actual = s.top.value
     expected = "apple"
     assert actual == expected
 
@@ -22,7 +22,7 @@ def test_push_onto_full():
     s.push("apple")
     s.push("banana")
     s.push("cucumber")
-    actual = s.head.value
+    actual = s.top.value
     expected = "cucumber"
     assert actual == expected
 
