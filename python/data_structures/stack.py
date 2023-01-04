@@ -1,4 +1,4 @@
-from python.data_structures.invalid_operation_error import InvalidOperationError
+from data_structures.invalid_operation_error import InvalidOperationError
 
 
 class Node:
@@ -12,28 +12,31 @@ class Stack:
     """
 
     def __init__(self):
-        self.head = None
+        self.top = None
 
     def push(self, value):
         new_node = Node(value)
-        new_node.next = self.head
-        self.head = new_node
+        new_node.next = self.top
+        self.top = new_node
 
     def pop(self):
         # if self.top is None:
         #     raise InvalidOperationError("Method not allowed on empty collection")
         try:
-            value = self.head.value
-            self.head = self.head.next
+            value = self.top.value
+            self.top = self.top.next
             return value
         except Exception as e:
             raise InvalidOperationError("Method not allowed on empty collection")
 
     def peek(self):
         try:
-            return self.head.value
+            return self.top.value
         except Exception as e:
             raise InvalidOperationError("Method not allowed on empty collection")
 
     def is_empty(self):
-        return self.head is None
+        if self.top:
+            return False
+        return True
+
