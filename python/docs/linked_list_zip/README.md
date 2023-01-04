@@ -13,4 +13,4 @@ You have access to the Node class and all the properties on the Linked List clas
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 
-the big O is is n for time and 1 for space becasue it is simplifying the lists into one list but is n for time because itdepends on the number of values 
+the big O is is n for time and 1 for space becasue it is simplifying the lists into one list but is n for time because itdepends on the number of values

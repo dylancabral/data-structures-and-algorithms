@@ -30,5 +30,7 @@ To run your tests
 - [Mock Interviews](python/docs/mock-interviews/README.md)
 - [Linked List](python/docs/linked_list/README.md)
 - [Linked List Insertions](python/docs/linked_list_insertions/README.md)
-- []()
+- [Stack and Queue](python/docs/stack_and_queue)
+- [Stack and queue Psuedoo](python/docs/stack_queue_pseudo)
+- [Animal Shelter](python/docs/stack_queue_animal_shelter)
 
