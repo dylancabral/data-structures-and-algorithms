@@ -11,7 +11,7 @@ def test_exists():
 def test_enqueue():
     q = Queue()
     q.enqueue("apple")
-    actual = q.head.value
+    actual = q.front.value
     expected = "apple"
     assert actual == expected
 
