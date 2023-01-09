@@ -77,4 +77,18 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 ## Table Of Contents
 
+- [Array Reverse](/docs/array_reverse/README.md)
+- [Array Insert Shift](/docs/array_insert_shift/README.md)
+- [Array Binary Search](/docs/array_binary_search/README.md)
+- [Array Binary Search](/docs/array_binary_search/README.md)
+- [Linked List Insertions](/docs/linked_list_insertions/README.md)
+- [Linked List - kth from end](/docs/linked_list_kth/README.md)
+- [Zip 2 Linked Lists](/docs/linked_list_zip/README.md)
+- [Stack and Queue](/docs/stack_and_queue/README.md)
+- [Pseudo Queue](/docs/stack_queue_pseudo/README.md)
+- [Animal Shelter Queue](/docs/stack_queue_animal_shelter/README.md)
+- [Stack-Queue-Brackets](/docs/stack_queue_brackets/README.md)
+- [Animal Shelter](docs/stack_queue_animal_shelter)
+
+
 
