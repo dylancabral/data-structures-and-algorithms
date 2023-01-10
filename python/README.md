@@ -88,7 +88,9 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Pseudo Queue](/docs/stack_queue_pseudo/README.md)
 - [Animal Shelter Queue](/docs/stack_queue_animal_shelter/README.md)
 - [Stack-Queue-Brackets](/docs/stack_queue_brackets/README.md)
-- [Animal Shelter](docs/stack_queue_animal_shelter)
+- [Animal Shelter](docs/stack_queue_animal_shelter/README.md)
+- [Tree Max](docs/tree_max/README.md)
+
 
 
 
