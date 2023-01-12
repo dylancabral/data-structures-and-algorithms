@@ -38,3 +38,25 @@ class Queue:
 
     def is_empty(self):
         return self.front is None
+
+
+# adams queue code idk where to put this in 
+    # def enqueue(self, value):
+    #     # check to see if queue is empty!
+    #     if self.rear:
+    #         self.rear.next = Node(value)
+    #         self.rear = self.rear.next
+    #         return
+    #     self.rear = self.front = Node(value)
+
+    # def dequeue(self):
+    #     # consider a queue with only 1 node
+    #     # TODO: refactor class to include a .length
+    #     if self.front == self.rear:
+    #         dequeued = self.front
+    #         self.front = self.rear = None
+    #         return dequeued.value
+
+    #     dequeued = self.front
+    #     self.front = self.front.next
+    #     return dequeued.value
