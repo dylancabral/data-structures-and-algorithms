@@ -77,19 +77,24 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 ## Table Of Contents
 
-- [Array Reverse](/docs/array_reverse/README.md)
-- [Array Insert Shift](/docs/array_insert_shift/README.md)
-- [Array Binary Search](/docs/array_binary_search/README.md)
-- [Array Binary Search](/docs/array_binary_search/README.md)
-- [Linked List Insertions](/docs/linked_list_insertions/README.md)
-- [Linked List - kth from end](/docs/linked_list_kth/README.md)
-- [Zip 2 Linked Lists](/docs/linked_list_zip/README.md)
-- [Stack and Queue](/docs/stack_and_queue/README.md)
-- [Pseudo Queue](/docs/stack_queue_pseudo/README.md)
-- [Animal Shelter Queue](/docs/stack_queue_animal_shelter/README.md)
-- [Stack-Queue-Brackets](/docs/stack_queue_brackets/README.md)
-- [Animal Shelter](docs/stack_queue_animal_shelter/README.md)
-- [Tree Max](docs/tree_max/README.md)
+1. [Array Reverse](./docs/array_reverse/README.md)
+2. [Array Insert Shift](./docs/array_insert_shift/README.md)
+3. [Array Binary Search](./docs/array_binary_search/README.md)
+4. [Mock Interviews]
+5. [Linked List Implementation](./docs/linked_list/README.md)
+6. [Linked List Insertions](./docs/linked_list_insertions/README.md)
+7. [Linked List - kth from end](./docs/linked_list_kth/README.md)
+8. [Zip 2 Linked Lists](./docs/linked_list_zip/README.md)
+9. [Mock Interviews]
+10. [Stack and Queue](./docs/stack_and_queue/README.md)
+11. [Pseudo Queue](./docs/stack_queue_pseudo/README.md)
+12. [Animal Shelter Queue](./docs/stack_queue_animal_shelter/README.md)
+13. [Stack-Queue-Brackets](./docs/stack_queue_brackets/README.md)
+14. [Mock Interviews]
+15. [Binary and BST implementation](./docs/trees/README.md)
+16. [Tree Max](./docs/tree_max/README.md)
+17. [Tree Breadth First](./docs/tree_breadth_first/README.md)
+18. [Tree FizzBuss](./docs/tree_fizz_buzz/README.md)
 
 
 
