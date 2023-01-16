@@ -18,6 +18,7 @@ while b head is none return a
 cycles back and forth in while look appending 
 list a returns with b values in order of a -b-a-b-a-b
 
+
 the big O is is n for time and 1 for space becasue it is simplifying the lists into one list but is n for time because itdepends on the number of values
 
 [Linked List zip](../../code_challenges/linked_list_zip.py)
