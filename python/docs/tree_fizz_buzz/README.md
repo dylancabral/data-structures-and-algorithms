@@ -13,16 +13,19 @@
 ![Tree max White board](breadth_first.png)
 
 ## Approach & Efficiency
-write a function called fizz buzz
 
+Created a function that takes in a k-ary tree as an argument, and creates a copy of that tree using the clone() method from the provided KaryTree class.
 
-return new k-ary tree
-
+Within that function I used a helper function to take care of changing the values of the nodes depending on their divisibility by 3 and/or 5. The helper function calls itself recursively with each of the argument node's children.
+Outside the helper function, the helper function is called on the cloned tree's root node.
+The main function returns the cloned and fizz-buzzed list
 ## Big O
 
-lorem ipsum lorem ipsum
+Time: O(n) - Each node needs to be traversed to check for divisibility by 3 and/or 5.
+
+Space: O(n) - Each node from the original tree is copied, so each node occupies memory space so it is determined upon imput and correlates with that
+
 
 ## Solution
 
-
-[unfinished k-ary tree code](../../data_structures/kary_tree.py)
+[k-ary tree code](../../code_challenges/tree_fizz_buzz.py)
