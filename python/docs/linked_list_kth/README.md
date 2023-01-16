@@ -22,3 +22,5 @@ space is   O(0) this takes no extra space it is just finding a node
 ## Solution
 
 ![Linked List Tests](linkedListTest.png)
+
+[Linked List Kth](../../data_structures/linked_list.py)
