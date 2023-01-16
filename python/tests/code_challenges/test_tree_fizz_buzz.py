@@ -64,7 +64,7 @@ def test_new_copy_returned(tree):
     assert actual == expected
 
 
-# @pytest.fixture
+@pytest.fixture
 def tree():
     one = Node(1)
     two = Node(2)
