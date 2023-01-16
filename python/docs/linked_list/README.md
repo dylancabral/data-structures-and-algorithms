@@ -52,3 +52,6 @@ includes tries to find a input value in the linked list. It takes in a value and
 
 __str__ returns the linked list as a string. It sets current equal to self.head, creates an emtpy string variable, and runs a while loop until current is equal to None. While current does not equal None, then the string is appended with { } -> that contains the current.value inside the curly brackets. Once current equals None, string is appended with NULL. The string variable now contains all values of the linked list and ends with "NULL".
 
+## link to code
+
+[linked list code](../../data_structures/linked_list.py)
