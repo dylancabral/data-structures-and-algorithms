@@ -1,5 +1,8 @@
-# Challenge Summary
+# Insert Sort
 
+Insert sort is a double forloop or im sure there is other ways to do it that are consistently more effiecient but basically this is comparing values and mmoving them according to their placement in value, the loop moves and compares value to the adjacent values then will more the value to a differnet index if the values are not in the correct index according to value
+
+## Problem 
 Using Insert array sort sort through an array
 with the given input return the array in lowest to largest 
 array
