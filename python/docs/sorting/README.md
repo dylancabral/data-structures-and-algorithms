@@ -12,7 +12,7 @@ or greater than the adjacent value
  
 ## Whiteboard Process
 
-![White Board](./insert_sort.png)
+![White Board](insert_sort.png)
 
 ## Approach & Efficiency
 
@@ -31,7 +31,5 @@ Insert the current element into its correct position in the sorted portion of th
 Once the for loop is finished, return the sorted array.
 
 ## Solution
-
-![insertion Sort](./insert_sort.png)
 
 [solved code](../../data_structures/insertion_sort.py)
