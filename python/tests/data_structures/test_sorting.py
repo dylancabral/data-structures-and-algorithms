@@ -1,5 +1,5 @@
 import pytest
-from data_structures.insertion_sort import insertion_sort
+from data_structures.sorting import insertion_sort, merge, merge_sort
 
 def test_exists():
     assert insertion_sort
@@ -24,3 +24,19 @@ def test_insertion_sort_6():
 
 def test_insertion_sort_7():
   assert insertion_sort([]) == []
+
+
+def test_merge_sort():
+  assert merge_sort([1,2,3,4,5]) == [1,2,3,4,5]
+
+def test_merge_sort_1():
+  assert merge_sort([5,4,3,2,1]) == [1,2,3,4,5]
+
+def test_merge_sort_2():
+  assert merge_sort([1,9,7,6,8]) == [1,6,7,8,9]
+
+def test_merge_sort_3():
+  assert merge_sort([100]) == [100]
+
+def test_merge_sort4():
+  assert merge_sort([]) == []
