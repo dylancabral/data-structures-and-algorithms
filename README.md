@@ -33,4 +33,7 @@ To run your tests
 - [Stack and Queue](python/docs/stack_and_queue)
 - [Stack and queue Psuedoo](python/docs/stack_queue_pseudo)
 - [Animal Shelter](python/docs/stack_queue_animal_shelter)
+- [Sorting](./sorting/insertion/README.md)
+- [More Sorting](./sorting/merge/README.md)
+- [Even More Sorting](./sorting/)
 
